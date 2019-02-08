@@ -1,0 +1,197 @@
+html {
+    height: 100%
+}
+
+body{
+    background: url('../images/cups2.jpg');
+    /* background-size: center; */
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.modal {
+    /* display: none; */
+    /* opacity: 0; */
+    /* position: fixed; */
+    /* top: 13%; */
+    /* left: 30%; */
+    /* margin-top: 0px; */
+    width: 35vw;
+    margin: 80px auto;
+    margin-bottom: 30px;
+    height: 569px;
+    display: grid;
+    grid-auto-rows: 2rem;
+    grid-row-gap: 1rem;
+    /* margin: auto; */
+    padding: 30px 0;
+    border: 4px solid black;
+    border-radius: 10px;
+    /* background: rgba(136, 194, 188, 0.95); */
+    /* overflow-y: scroll; */
+    background: rgba(211, 208, 208, 0.9);
+}
+
+.modal-input {
+    /* display: grid; */
+    display: inherit;
+    grid-row-gap: 1rem;
+    width: 40%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+.modal > button {
+    justify-self: end;
+    margin: 0;
+    background: none;
+    border-width: 0;
+    padding-right: 10px;
+}
+
+.modal-input label {
+    font-size: 1.3rem;
+    padding-left: 20px;
+    color: rgb(9, 9, 182);
+}
+
+.modal-input input {
+    height: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+select {
+    margin-left: 20px;
+    height: 25px;
+}
+
+textarea {
+    margin-left: 20px;
+    height: 100px;
+    width: 150%;
+}
+
+.modal-input__note {
+    width: max-content;
+}
+
+.modal h2 {
+    /* display: grid; */
+    display: inherit;
+    margin: 0;
+    justify-items: center;
+}
+
+.modal-button {
+    width: 160%
+}
+
+.modal-send {
+    background: rgb(40, 184, 83);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 1.7rem;
+    width: 7rem;
+}
+
+.modal-cancel {
+    background: rgb(179, 27, 22);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    height: 1.7rem;
+    width: 7rem;
+}
+
+.modal-send:active,
+.modal-send:hover,
+.modal-cancel:active,
+.modal-cancel:hover,
+.modal > button:active, 
+.modal > button:hover {
+    color: rgb(0, 26, 255);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.add {
+    cursor: pointer;
+    margin: 70px auto
+}
+/* .search-form {
+    margin-top: 30vh;
+
+} */
+
+.addButton {
+    height: 100%;
+    margin: auto;
+}
+
+.search-bar {
+    /* display: inline-block; */
+    background: white;
+    width: 45%;
+    height: 60px;
+    margin: 20px auto;
+    border-bottom: 1px  solid black;
+    border-radius: 6px;
+}
+
+.search-bar input {
+    background: none;
+    width: 90%;
+    height: 60px;
+    vertical-align: bottom;
+    border: 0;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+button {
+    margin: auto;
+}
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar button{
+    background: none;
+    color: blue;
+    width: 61px;
+    height: 100%;
+    cursor: pointer;
+    border: 0px;
+    padding: 0;
+}
+
+i {
+    font-size: x-large;
+}
+
+.open {
+    display: grid;
+    opacity: 1
+}
+
+#listPage {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#listLink {
+    display: inline-block;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+#listLink:hover,
+#listLink:active {
+    color: yellow;
+    font-size: 1.6rem;
+}

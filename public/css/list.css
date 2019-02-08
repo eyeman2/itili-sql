@@ -1,0 +1,376 @@
+.modal{
+    display: none;
+
+}
+html {
+    /* height: 100%; */
+    /* background: rgb(209, 207, 207); */
+}
+
+/* body {
+    height: 100%;
+    background: white;
+} */
+
+.fa-plus{
+    font-size: xx-large;
+    color: darkorchid;
+}
+
+.add-item {
+    /* height: 32px;
+    width: 2rem; */
+    margin-left: 35%;
+}
+
+.item-add__box {
+    background: rgb(209, 207, 207);
+    display: flex;
+    justify-content: center;
+    padding: 4px 0px;
+  }
+
+.item-add {
+    width: 450px;
+    border-radius: 7px;
+    background: white;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.item-add__input {
+    background: none;
+    border: none;
+    /* width: 94%; */
+    /* height: 24px; */
+    /* text-align: left; */
+    font-size: 1.2rem;
+    padding-left: 5px;
+}
+
+.item-add__input:focus {
+    outline: none;
+}
+
+.item-add__search {
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    background-color: rgb(121, 204, 197);
+    width: 40px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    /* height: 100%; */
+}
+
+.item-add__search:active,
+.item-add__search:hover {
+    color: unset;
+}
+
+.low-nav {    
+    background: rgb(4, 136, 192);
+}
+
+.item-sort {
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}
+
+.item-sort__lists {
+    font-size: 1.5rem;
+    display: flex;   
+}
+
+.item-sort__show {
+    font-size: 1.5rem;
+    display: flex;
+    margin-right: 50px;
+    height: 25px;
+}
+
+.item-sort__show > div {
+    /* height: 25px */
+}
+
+.item-sort__buttons {
+    /* margin-right: 10px; */
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: rgb(183, 201, 19);
+    font-size: 1.2rem;
+}
+
+.item-sort ~ button:active,
+.item-sort ~ button:hover {
+    color: rgb(134, 134, 10);
+}
+
+.item-sort__buttons:focus {
+    outline: none;
+}
+
+.list {
+    display: flex;
+    font-size: 1.5rem;
+    margin-left: 30px;
+}
+
+.rate-list {
+    margin-left: 10px;
+    width: 100px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#good-list {
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#soso-list {
+    margin: 0px 5px;
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#bad-list {
+    border: 1px solid rgb(255, 252, 252);
+    border-radius: 3px;
+    cursor: pointer;
+}
+#show-list {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 6px;
+}
+
+.showButton {
+    margin: 5px;
+    background: rgb(21, 21, 197);
+    color: rgb(253, 255, 255);
+    border: 2px solid white;
+    border-radius: 6px;
+    height: 23px;
+    max-width: fit-content;
+}
+
+.showButton:hover {
+    border-color: yellow;
+    color: yellow;
+    height: 25px;
+    cursor: pointer;
+}
+
+main {
+    display: block;
+    }
+
+.rated {    
+    background-color: rgb(228, 228, 218);
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-row-gap: 3rem;
+    padding-bottom: 13px; 
+    padding-top: 30px;
+    margin: auto;
+    width: 70%
+}
+
+.rated_items {
+    height: fit-content;
+    position: relative;
+    width: 20vw;
+    border-radius: 10px;
+    background: white;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+}
+
+h5 {
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-right: 5px;
+}
+
+#category div{
+    padding-top: 20px;
+}
+
+#sortBy {
+    width: 150px;
+    /* height: 25px; */
+    border-radius: 3px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.eachItem {
+    /* line-height: 20px; */
+    /* font-family: "Bitter"; */
+}
+
+.eachItem ~ p {
+    font-family: "Bitter";
+}
+
+.eachItem-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+#scoreP {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: "Biter", Georgia, 'Times New Roman', Times, serif;
+    color: green;
+}
+a {
+    text-decoration: none;
+}
+
+.editBtn{
+    background: none;
+    /* position: absolute;
+    top: 6px;
+    right: 28px; */
+    color: green;
+    border: none;
+}
+
+.deleteBtn {
+    background: none;
+    /*position: absolute;
+    top: 6px;
+    right: 0px; */
+    color: rgb(194, 7, 7);
+    border: none;
+}
+
+.hid-edit,
+.hid-delete {
+    position: absolute;
+    visibility: hidden;
+    color: black;
+}
+
+.hid-edit:hover,
+.hid-delete:hover {
+    visibility: visible;
+}
+
+.deleteBtn:hover,
+.deleteBtn:active,
+.editBtn:hover,
+.editBtn:active {
+    cursor: pointer;
+
+}
+/* img {
+    margin: 0;
+    width: 33vw;
+    display: inline-block;
+} */
+
+
+/* .backgrounds {
+    display: flex;
+    align-items: flex-start;
+    margin: 100px 60px;
+} */
+
+/* #good{
+    background: rgb(235, 226, 226);
+    background-blend-mode: color-dodge;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#soso {
+    background: rgb(235, 226, 226);
+    background-blend-mode: color-dodge;
+    display: inline-block;
+    margin-left: 60px;
+    text-align: center;
+    width: 30%;
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#bad {
+    background: rgb(235, 226, 226);
+    display: inline-block;
+    margin-left: 60px;
+    text-align: center;
+    width: 30%;
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 10px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#listBad div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6px;
+    line-height: 2rem;
+}
+
+#listGood div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6px;
+    line-height: 2rem;
+
+}
+#listSoSo div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6px;
+    line-height: 2rem;
+} */
+
+
+
+/* li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li div{
+    display: flex;
+    align-items: center;    
+} */

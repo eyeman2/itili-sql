@@ -1,0 +1,76 @@
+title {
+    font-family: 'PT Mono', monospace;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 3.7rem auto;
+    grid-template-areas: "header"
+                         "main";
+    height: 100%;
+    margin: 0px;
+}
+
+.main-header{
+    background: rgb(235, 227, 227);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: 60px; */
+}
+
+.main-nav {
+    /* justify-self: end; */
+    margin-right: 60px;
+}
+
+.main-header__brand {
+    font-family: 'Rock Salt', cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-left: 60px;
+}
+
+.main-nav__items {
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 1.3rem;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 55px;
+}
+
+.main-nav__item {
+    /* display: flex; */
+    list-style: none;
+    justify-items: space-around;
+    margin-left: 6px;
+    }
+
+.main-nav__item a {
+    text-decoration: none;
+    color: rgba(19, 77, 165, 0.651);
+}
+
+main {
+    grid-area: main;
+}
+
+#signup {
+    border: 2px solid grey;
+    padding: 0px 3px;
+    border-radius: 4px;
+    background-color: lightgoldenrodyellow;
+}
+
+#signin {
+    border: 2px solid grey;
+    padding: 0px 3px;
+    border-radius: 4px;
+    background-color: lightgoldenrodyellow;
+    margin-left: 20px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill|Mukta+Vaani|Rock+Salt|PT+Mono|Bitter:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/list.css">
+    <link rel="stylesheet" href="./css/shared.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <title>i t i l i</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="/" class="main-header__brand">ITILI</a>
+        <form action="" class="item-add">
+            <input type="text" class="item-add__input" placeholder="Search...">
+            <button class="item-add__search"><i class="fa fa-search"></i></button>
+        </form>        
+        <nav class="main-nav">
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="/list">My List</a>
+                </li>
+                <li class="main-nav__item" id="signin">
+                    <a href="/signin">Sign In</a>
+                </li>
+                <li class="main-nav__item" id="signup">
+                    <a href="/signup">Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="modal"></div>
+
+    <main>
+    <section class="low-nav">
+        <div class="item-sort">
+        <div class="item-sort__show">            
+            <button class="item-sort__buttons" id="items" type="button">Items</button>
+            <button class="item-sort__buttons" id="brand" type="button">Store/Brand...</button>
+            <button class="item-sort__buttons" id="category" type="button">Category</button>
+            
+        </div>
+        <div class="item-sort__lists">
+            <div style="color: white">Sort By:</div>
+            <select name="sortBy" id="sortBy">
+                <option value="nameUp">Name (asc)</option>
+                <option value="nameDown">Name (desc)</option>
+                <option value="dateFirst">Date (asc)</option>
+                <option value="dateLast">Date (desc)</option>
+            </select>
+        </div>
+        <div class="list">
+            <div style="color:white">Show:</div>
+            <select class="rate-list">
+                <option value="all">All</option>
+                <option value="goodlist" id="good-list">Good</option> 
+                <option value="sosolist" id="soso-list">Okay</option> 
+                <option value="badlist" id="bad-list">Bad</option>
+            </select>
+        </div>
+    </div>
+        <div id="show-list"></div>
+    </section>
+
+        <section class="rated">
+        <!-- <div class="rated_items">
+
+        </div> -->
+        <!-- <div class="backgrounds">
+            <div class="rated_items" id="good">
+                <h3>The Good</h3>
+                <div id="listGood">
+
+                </div>
+            </div>
+            <div class="rated_items" id="soso">
+                <h3>The Second Chance</h3>
+                <div id="listSoSo"></div>
+            </div>
+            <div class="rated_items" id="bad">
+                <h3> The Bad</h3>
+                <div id="listBad"></div>
+            </div>
+        </div> -->
+        </section>
+    </main>
+    <script src="./js/likes.js"></script>
+</body>
+
+</html>
+
+<!-- <section class="rated">
+        <div class="good">
+        <div>The Good</div>
+        <img src="../images/shepherds-pie.jpg" alt="shepherds pie">
+        </div>    
+        <div class="medium">
+            <div>The Second Chance</div>
+        </div>
+        <div class="bad">
+            <div>The Bad</div>
+            <img src="../images/black-dahlia.jpg" alt="black dahlia">
+        </div>
+
+    </section> -->
+
+<!-- <div id="background1">
+            <div class="good">The Good</div>
+        </div>
+        <div id="background2">
+            <div class="soso">The Second Chance</div>
+        </div>
+        <div id="background3">
+            <div class="bad">The Bad</div>
+        </div> -->
