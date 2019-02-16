@@ -73,6 +73,8 @@ html {
 
 .low-nav {    
     background: rgb(4, 136, 192);
+    width: 70vw;
+    margin: auto;
 }
 
 .item-sort {
@@ -80,6 +82,7 @@ html {
     display: flex;
     justify-content: start;
     align-content: center;
+    justify-self: center;
 }
 
 .item-sort__lists {
@@ -175,7 +178,7 @@ main {
     }
 
 .rated {    
-    background-color: rgb(228, 228, 218);
+    background-color: rgb(228, 228, 228);
     display: grid;
     grid-template-columns: auto auto auto ;
     grid-row-gap: 3rem;
@@ -189,7 +192,7 @@ main {
     height: fit-content;
     position: relative;
     width: 20vw;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     background: white;
     padding-left: 10px;
     padding-bottom: 5px;

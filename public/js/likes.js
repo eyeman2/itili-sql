@@ -100,80 +100,70 @@ $(document).ready(function () {
         modalList()
     })
     
-    $(".low-nav").on("click", function() {
+    $("#category").on("click", function() {
     $("#show-list").empty(),
         $.get("api/likes", function (data) {
             for (var i = 0; i < data.length; i++) {
-                (handleLists(data[i]))
+                (handleCategoryList(data[i]))
                 }
         })
     })
-
-    function handleCategoryList(catName){
+    $("#brand").on("click", function() {
+        $("#show-list").empty(),
+            $.get("api/likes", function (data) {
+                for (var i = 0; i < data.length; i++) {
+                    (handleBrandList(data[i]))
+                    }
+            })
+        })
+        $("#items").on("click", function() {
+            $("#show-list").empty(),
+                $.get("api/likes", function (data) {
+                    for (var i = 0; i < data.length; i++) {
+                        (handleItemsList(data[i]))
+                        }
+                })
+            })
+            
+    function handleCategoryList(name){
         // var div = $("<div>");
-        var catButton = $("<button type=button>" + catName.category + "</button>");
-        catButton.data("category", catName);
-        catButton.addClass("showButton");
-        catButton.attr("id", catName.category);
-        showList.append(catButton);
+        var listButton = $("<button type=button>" + name.category + "</button>");
+        listButton.data("category", name);
+        listButton.addClass("showButton");
+        listButton.attr("id", name.id);
+        showList.append(listButton);
+    }
+
+    function handleItemsList(name){
+        // var div = $("<div>");
+        var listButton = $("<button type=button>" + name.item + "</button>");
+        listButton.data("category", name);
+        listButton.addClass("showButton");
+        listButton.attr("id", name.id);
+        showList.append(listButton);
+    }
+    
+    function handleBrandList(name){
+        // var div = $("<div>");
+        var listButton = $("<button type=button>" + name.brand_location + "</button>");
+        listButton.data("category", name);
+        listButton.addClass("showButton");
+        listButton.attr("id", name.id);
+        showList.append(listButton);
+    }
+   
+    function handleShowList() {
         
     }
-
-    function handleLists(name){
-        var category = $("#category");
-        var store = $("#brand");
-        var item = $("#items");
-        var button = $("<button>");
-
-        if (category) {
-            button.text(name.category);
-            button.attr("id", name.category)
-        }
-
-        if (store) {
-            button.text(name.brand_location);
-            button.attr("id", name.brand_location)
-        }
-
-        if (item) {
-            button.text(name.item);
-            button.attr("id", name.item)
-        }
-
-        button.addClass("showButton");
-        showList.append(button)
-        console.log(name + "Anything ?")
-    }
-
-    // function renderCategoryList(list) {
-    //     var div = $("<div>");
-    //     div.append(list)
-    // }
-
     function getList() {
         var itemRating = "/rating/?=" + itemRating;
-
         $.get("/api/likes", function(data){
             for (var i = 0; i < data.length; i++) {
                 rated.append(setList(data[i]))
-                // if (data[i].rating == "good") {
-                // listGood.append(setList(data[i]))
-                // }
-                // if (data[i].rating == "bad") {
-                // listBad.append(setList(data[i]))
-                // }
-                // if (data[i].rating == "soso") {
-                // listSoSo.append(setList(data[i]))
-                // }
-
-                
-            }     
-        // renderList(rowsToAdd);    
+            }    
         })
     }
 
-
-    
     function handleDelete() {
         var listItemData = $(this).parent("div").parent("div").data("rating");
         var id = listItemData.id;
@@ -189,17 +179,5 @@ $(document).ready(function () {
        function handleEdit(){
            var updatePost = $(this).parent("div").parent("div").data("rating");
        }
-    // function renderList (rows){
-    //     listGood.append(rows)
-    //     // if (rows.rating == "good") {
-    //     //     listGood.prepend(rows); 
-    //     // }
-    //     // else if (rows.rating == "bad") {
-    //     //     listBad.prepend(rows);
-    //     // }
-    //     // else listSoSo.prepend(rows);
 
-    //     // console.log(rows.rating)
-    // }
-    // function handleItems {}
 })
